@@ -1,3 +1,5 @@
+import todo
+
 print('Welcome to simple task manager!\n')
 
 print('Please read below instrustions carefully. \n')
@@ -9,12 +11,12 @@ print('Press 4 to exit from the program.')
 def main(num):
     match num:
         case 1:
-            pass
+            todo.add_task()
         case 2:
-            pass
+            todo.view_tasks(todo.tasks)
         case 3:
-            pass
+            todo.remove_task()
         case 4:
-            pass
+            print('Good bye!')
         case _:
             print('Out of range instructions. Goodbye!')
