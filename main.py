@@ -20,3 +20,5 @@ def main(num):
             print('Good bye!')
         case _:
             print('Out of range instructions. Goodbye!')
+
+main(int(input('Please enter your choice: ')))
