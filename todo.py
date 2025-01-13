@@ -1,7 +1,7 @@
 def remove_task():
     view_tasks(tasks)
     index_to_be_removed = int(input('Give an index of task to be removed: '))
-    if index_to_be_removed in range(len(tasks)):
+    if index_to_be_removed in range(1, len(tasks)+1):
         tasks.pop(index_to_be_removed - 1)
     else:
         print('Nothing was removed')
