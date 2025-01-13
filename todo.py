@@ -1,10 +1,10 @@
 def remove_task():
     view_tasks(tasks)
-    index_to_be_removed = int(input('g: '))
+    index_to_be_removed = int(input('Give an index of task to be removed: '))
     if index_to_be_removed in range(len(tasks)):
-        tasks.pop(index_to_be_removed)
+        tasks.pop(index_to_be_removed - 1)
     else:
-        print('mitään ei poistettu')
+        print('Nothing was removed')
 
 
 tasks = []
