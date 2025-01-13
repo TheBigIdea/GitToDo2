@@ -1,4 +1,4 @@
-import todo
+from todo import *
 
 print('Welcome to Simple To Do List manager!\n')
 
@@ -8,11 +8,11 @@ def main():
             choice = int(input('Please enter your choice (1: Add, 2: View, 3: Remove, 4: Exit): '))
             match choice:
                 case 1:
-                    todo.add_task()
+                    add_task()
                 case 2:
-                    todo.view_tasks(todo.tasks)
+                    view_tasks(tasks)
                 case 3:
-                    todo.remove_task()
+                    remove_task()
                 case 4:
                     print("Goodbye!")
                     break
