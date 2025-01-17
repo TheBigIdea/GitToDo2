@@ -10,7 +10,7 @@ def main():
                 case 1:
                     add_task()
                 case 2:
-                    view_tasks(tasks)
+                    view_tasks()
                 case 3:
                     remove_task()
                 case 4:
